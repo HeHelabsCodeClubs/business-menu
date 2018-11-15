@@ -9,7 +9,6 @@ class BusinessMenu extends Component {
             userData: {}
         };
     };
-
     render() {
         const {
             mainLogo,
@@ -22,7 +21,8 @@ class BusinessMenu extends Component {
             alignItems,
             display,
             menuLinkClass,
-            logoutBtn
+            logoutBtn,
+            logoutUser
         } = this.props;
         return(
             <div className="common-header">
@@ -54,7 +54,7 @@ class BusinessMenu extends Component {
                                     <div className="logout-btn">
                                         <button
                                         className={logoutBtn}
-                                        onClick={this.logoutUser}
+                                        onClick={logoutUser}
                                         >
                                         Logout
                                         </button>

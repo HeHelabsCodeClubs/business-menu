@@ -32,12 +32,12 @@
     padding: 0 !important;
     margin: 0 !important;
 }
-.common-header .header-wrapper .logo-wrapper .comp-logo {
+.common-header .header-wrapper .logo-wrapper {
     justify-content: left;
     align-items: center;
     display: flex;
 }
-.common-header .header-wrapper .logo-wrapper .comp-logo img {
+.common-header .header-wrapper .logo-wrapper img.comp-logo {
     height: 2.5rem;
     margin: 0 0 0 2rem;
 }

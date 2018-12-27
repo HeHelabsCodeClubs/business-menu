@@ -34,7 +34,7 @@ class BusinessMenu extends Component {
                         <nav className="nav nav-container" style={{alignItems: alignItems}}>
                             <ul className="nav__menu" style={{display: display}}>
                                 <li className="nav__menu-item">
-                                    <Link to="/profile" className={this.props.view === 'profile' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-icon_home"></span>{customerName}</Link>
+                                    <Link to="/dashboard" className={this.props.view === 'profile' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-icon_home"></span>{customerName}</Link>
                                 </li>
                                 <li className="nav__menu-item">
                                     <Link to="/orders" className={this.props.view === 'orders' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-Group-187" style={{color: iconColor}}></span>Requests</Link>

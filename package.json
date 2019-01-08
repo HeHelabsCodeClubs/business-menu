@@ -1,6 +1,6 @@
 {
   "name": "business-menu",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "\"a component to render business menu\"",
   "main": "dist/index.js",
   "scripts": {

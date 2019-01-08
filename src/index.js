@@ -22,7 +22,10 @@ class BusinessMenu extends Component {
             display,
             menuLinkClass,
             logoutBtn,
-            logoutUser
+            logoutUser,
+            menuOne,
+            menuTwo,
+            menuThree
         } = this.props;
         return(
             <div className="common-header">
@@ -34,21 +37,38 @@ class BusinessMenu extends Component {
                         <nav className="nav nav-container" style={{alignItems: alignItems}}>
                             <ul className="nav__menu" style={{display: display}}>
                                 <li className="nav__menu-item">
-                                    <Link to="/dashboard" className={this.props.view === 'profile' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-icon_home"></span>{customerName}</Link>
+                                    <Link to="/dashboard" 
+                                    className={this.props.view === 'profile' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
+                                    <span className="icon-icon_home"></span>
+                                    {customerName}
+                                    </Link>
                                 </li>
                                 <li className="nav__menu-item">
-                                    <Link to="/orders" className={this.props.view === 'orders' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-Group-187" style={{color: iconColor}}></span>Requests</Link>
+                                    <Link to="/orders" 
+                                    className={this.props.view === 'orders' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
+                                    <span className="icon-Group-187" style={{color: iconColor}}></span>
+                                    {menuOne}
+                                    </Link>
                                 </li>
                                 <li className="nav__menu-item">
-                                    <Link to="/invoices" className={this.props.view === 'invoices' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-invoice-icon" style={{color: iconColor}}></span> Invoices </Link>
+                                    <Link to="/invoices" 
+                                    className={this.props.view === 'invoices' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
+                                    <span className="icon-invoice-icon" style={{color: iconColor}}></span>
+                                    {menuTwo}
+                                    </Link>
                                 </li>
                                 <li className="nav__menu-item">
-                                    <div className={this.props.view === 'notifications' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-Notification-Icon" style={{color: iconColor}}><span className=""></span></span>
+                                    <div className={this.props.view === 'notifications' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
+                                    <span className="icon-Notification-Icon" style={{color: iconColor}}><span className=""></span></span>
                                     {notification}
-                                     </div>
+                                    </div>
                                 </li>
                                 <li className="nav__menu-item">
-                                    <Link to="/contact" className={this.props.view === 'contact' ? `${menuLinkClass} active` : `${menuLinkClass}`}><span className="icon-Union-11" style={{color: iconColor}}></span> Contact Us </Link>
+                                    <Link to="/contact" 
+                                    className={this.props.view === 'contact' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
+                                    <span className="icon-Union-11" style={{color: iconColor}}></span> 
+                                    {menuThree}
+                                    </Link>
                                 </li>
                                 <li className="nav__menu-item">
                                     <div className="logout-btn">

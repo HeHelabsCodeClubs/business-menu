@@ -26,7 +26,8 @@ class BusinessMenu extends Component {
             menuOne,
             menuTwo,
             menuThree,
-            menuItemClass
+            menuItemClass,
+            itemDisplay
         } = this.props;
         return(
             <div className="common-header">
@@ -51,7 +52,7 @@ class BusinessMenu extends Component {
                                     {menuOne}
                                     </Link>
                                 </li>
-                                <li className={`nav__menu-item ${menuItemClass}`}>
+                                <li className={`nav__menu-item ${menuItemClass}`} style={{display: itemDisplay}}>
                                     <Link to="/invoices" 
                                     className={this.props.view === 'invoices' ? `${menuLinkClass} active` : `${menuLinkClass}`}>
                                     <span className="icon-invoice-icon" style={{color: iconColor}}></span>
